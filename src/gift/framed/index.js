@@ -7,7 +7,7 @@ function Framed() {
     const [doneGuessing, setDoneGuessing] = useState(false);
     const [currentFrame, setCurrentFrame] = useState(0);
     const frames = ["./frame1.png", "./frame2.png", "./frame3.png", "./frame4.png", "./frame5.png", "./frame6.png"];
-    const rightAnswers = ["About Time", "about time", "abouttime", "AboutTime", " About Time", "About Time "];
+    const rightAnswers = ["About Time", "about time", "abouttime", "AboutTime", " About Time", "About Time ", "About time"];
 
     const submitGuess = (guess) => {
         setGuesses([guess, ...guesses]);

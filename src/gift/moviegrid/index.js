@@ -60,9 +60,9 @@ function MovieGrid() {
 
                 <div class="row mt-5">
                     <p class="col-3 col-md-2"></p>
-                    <p class="col">Stars a "Chris" (Hemsworth, Pratt, Evans, etc.)</p>
+                    <p class="col">Stars a "Chris"</p>
                     <p class="col">We watched in my dorm(s)</p>
-                    <p class="col">Owen Wilson (do not use Midnight In Paris)</p>
+                    <p class="col">Owen Wilson</p>
                 </div>
 
                 <div class="row mt-2 align-items-center">
