@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* GENERAL CSS */
+
+h1 {
+    color: white;
+    font-family:'Roboto', sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color:#212121;
+}
+
+.val-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.test {
+    background-color: red;
+}
+
+.cuterButton {
+    background-color: #383838;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 5%;
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+
+/* FRAMED */
+.textbox {
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.submit-button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 5px;
+    background-color: green;
+    border: 0;
+}
+
+.whiteText {
+    color: white;
+}
+
+.frameNumber {
+    background-color: #383838;
+    align-self: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30%;
+}
+
+.clickedColor {
+    background-color: #262626;
+}
+
+.guessText {
+    border-color: #942323;
+    border-style: solid;
+    border-width:2px;
+    padding: 5px 15px 5px 10px;
+    color: gray;
+}
+
+.green-border {
+    border-color: green;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+.dark-grey-background {
+    background-color:#212121;
+}
