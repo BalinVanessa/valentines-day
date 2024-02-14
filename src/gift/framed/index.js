@@ -25,7 +25,9 @@ function Framed() {
     }
 
     const isGuessCorrect = (guess) => {
-        return rightAnswers.includes(guess);
+        let useGuess =
+            guess.substring(guess.length - 1, guess.length) === " " ? guess.substring(0, guess.length - 1) : guess;
+        return rightAnswers.includes(useGuess);
     }
 
     const renderNumberButtons = () => {
@@ -63,7 +65,7 @@ function Framed() {
                 <div class={(doneGuessing ? "" : "d-none ") + "d-flex flex-column text-center mt-3 mb-5"}>
                     <h5>The Answer Is:</h5>
                     <h3 class={guesses.find(
-                        (guess) => rightAnswers.includes(guess)) ? "green-text" : "red-text"}>About Time</h3>
+                        (guess) => isGuessCorrect(guess)) ? "green-text" : "red-text"}>About Time</h3>
                     <p>Frame 6 is you and me fr :)</p>
                     <p class={guesses.find((guess) => rightAnswers.includes(guess)) ? "d-none" : "w-75 align-self-center"}>
                         Knowing you, you probably got this wrong on purpose to test the logic of my code.

@@ -32,11 +32,14 @@ function MovieGrid() {
     }
 
     const submitGuess = (guess) => {
+        let useGuess =
+            guess.substring(guess.length - 1, guess.length) === " " ? guess.substring(0, guess.length - 1) : guess;
+
         let boxId = "";
         boxId = boxId.concat(currentBox.row.toString(), currentBox.column.toString());
         let updateBox = document.getElementById(boxId);
 
-        if (currentBox.answer.includes(guess.toUpperCase())) {
+        if (currentBox.answer.includes(useGuess.toUpperCase())) {
             updateBox.style.backgroundColor = "white";
             updateBox.style.backgroundImage = currentBox.img;
             updateBox.style.backgroundSize = "cover";

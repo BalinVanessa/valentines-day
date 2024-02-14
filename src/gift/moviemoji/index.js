@@ -43,7 +43,9 @@ function Moviemoji() {
     }
 
     const isGuessCorrect = (guess) => {
-        return guess.toUpperCase() === answer;
+        let useGuess =
+            guess.substring(guess.length - 1, guess.length) === " " ? guess.substring(0, guess.length - 1) : guess;
+        return useGuess.toUpperCase() === answer;
     }
 
     useEffect(() => {
