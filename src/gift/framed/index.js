@@ -67,7 +67,7 @@ function Framed() {
                     <h3 class={guesses.find(
                         (guess) => isGuessCorrect(guess)) ? "green-text" : "red-text"}>About Time</h3>
                     <p>Frame 6 is you and me fr :)</p>
-                    <p class={guesses.find((guess) => rightAnswers.includes(guess)) ? "d-none" : "w-75 align-self-center"}>
+                    <p class={guesses.find((guess) => isGuessCorrect(guess)) ? "d-none" : "w-75 align-self-center"}>
                         Knowing you, you probably got this wrong on purpose to test the logic of my code.
                         Yes, I still programmed this even though I know you'll get the movie. Thanks for
                         testing my code.
